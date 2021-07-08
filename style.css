@@ -61,9 +61,9 @@ main, .footer{z-index: 1000;}
 	  
 	  
   }
-  #logo{
-	  padding-left: 20rem;
-	  padding-top: 1rem;
+  #logo_index{
+	  padding-left: 5rem;
+	  /*padding-top: 1rem;*/
 	  height: 3.5rem;
   }
 
@@ -552,7 +552,11 @@ background-color: purple;
 		
 		margin-right:80rem;
 	}
-	 .carte__contenu{margin-right:20rem;}
+	 .carte__contenu{/*margin-right:20rem;*/
+/*display: flex;
+	 flex-direction: column;*/
+	 margin-bottom:40px;
+	 margin-right: 30rem;}
 /*reponsive PC*/
 @media screen and (min-width: 1280px) {
 #logo-loader{
@@ -573,8 +577,8 @@ opacity: 0;
   border-radius: 50%;
  animation: lds-default 1.2s linear infinite;
 }
-	#logo{
-		margin-left: 10rem;
+	#logo_index{
+		padding-left: 2rem;
 	}
 	.fonctionnement__titre, .restaurants__titre{
 		
@@ -608,7 +612,7 @@ opacity: 0;
         grid-template-columns: repeat(auto-fill,minmax(500px, 1fr));
 }	
       
- .carte__contenu{margin-right:12rem;margin-top:1rem;
+ .carte__contenu{margin-right:12rem;margin-bottom:1rem;
  font-size:19px;}
  /*.soustitre{font-size:19px;}*/
 	
