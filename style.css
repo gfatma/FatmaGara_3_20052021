@@ -6,27 +6,14 @@ display: block;
 }
 .icon_heart {
 display: flex;
-justify-content: flex-end;
+
+/*justify-content: flex-end;*/
+flex-direction: row;
 font-size: 2rem;
 margin: 1.2rem 0 2rem 7rem;
 }
-.icon_heart:hover i.fa-heart {
-display: none;
-}
 
 
-.icon_heart_3:hover i.fa-heart {
-display: none;
-}
-.icon_heart_3:hover i.fas.fa-heart {
-display: block;
-}
-.icon_heart_3 {
-display: flex;
-justify-content: flex-end;
-font-size: 2rem;
-margin: 1.2rem 0 2rem 9rem;
-}
 
 i.fa-heart:hover {
 cursor: pointer;
@@ -35,8 +22,7 @@ border: 0 solid transparent;
 i.fas.fa-heart {
 display: none;
 background: linear-gradient(to bottom, #9356dc, #ff79da);
-/*background-clip: text;*/
-/*-webkit-background-clip: text;*/
+-webkit-background-clip: text;
 color: transparent;
 font-size: 2rem;
 }
@@ -91,51 +77,7 @@ main, .footer{z-index: 1000;}
   }
 
 
-/*.form{
-  padding: 2rem;
-  text-align: center;
-  background-color: #f6f6f6;}
 
-  .form_titre {
-    margin: 0;
-	font-size: 2rem;
-  }
-
-  .form_soustitre{
-    font-weight: 300;
-    margin: 1.5rem 0;
-	margin-left: 80px;
-	margin-right: 80px;
-	font-size: 1.60rem;
-  }
-
-  .form__bouton {
-
-	height: 6rem;
-	width: 30rem;
-    padding: 0 20px;
-    font-size: 2.2rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-	border: none;
-    border-radius: 10rem;
-    background-color: #d387ab;
-    background-image:  linear-gradient(#FF79DA, #9356DC );
-   
-}
-
-
-
-.form__bouton:hover {
-   box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset;	
-}
-
-.form__bouton:active {
-    /*box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6);*/
-/*box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset;	
-}
-*/
 /*Form*/ 
 .form {
     background-color: #f8f6f4;
@@ -178,7 +120,9 @@ counter-reset: repas;   list-style-type: none;
     
 	flex-direction:column;
     margin-left: 30px;}
-
+#fonctionnement_cadre:hover .fas{
+	color: violet;
+}
 .fonctionnement__liste{
     padding:5px 20px 5px 20px;
     margin:10px 25px 10px 9px; 
@@ -210,54 +154,7 @@ counter-reset: repas;   list-style-type: none;
 	 
 	 
 	  
-   /*.fonctionnement__titre{
-	font-size: 1.5rem;
-  }
-  .fonctionnement__liste{
-    padding: 1.5rem;
   
-	margin-bottom: 1rem;
-	
-	margin-left:4rem;
-	margin-right: 	1rem;
-	padding-right: 	17rem;
-	margin-top: 2rem;
-    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
-    border-radius: 3rem;
-    background-color: #f6f6f6;
-	justify-content: space-between;
-    display: flex;
-	flex-direction: row;
-    position: relative;
-	
-	height: 3rem;
-	font-size: 2rem;
-	list-style-type: none;
-	counter-increment: repas; /* on incrémente le compteur à chaque nouveau li */
-	/*margin-bottom: 1rem;
-
-	
-
-   
-  }
- .fonctionnement__liste:before {
-	content: counter(repas); /* on affiche le compteur */
-/*padding: 0 20px 6px;
-	padding-top: 10px;
-	margin-right: 0px;
-	vertical-align: top;
-	background: #9356DC;
-	/*-moz-border-radius: 100%;*/
-	/*border-radius: 100%;
-	font-weight: bold;
-	font-size: 0.8em;
-	color: white;
-}
-
-.fonctionnement__photo{
-	padding-left: 3.5rem;
-	padding-right: 3.5rem;
-}*/
 
 
 
@@ -616,9 +513,7 @@ background-color: purple;
 		
 		margin-right:80rem;
 	}
-	 .carte__contenu{/*margin-right:20rem;*/
-/*display: flex;
-	 flex-direction: column;*/
+	 .carte__contenu{
 	 margin-bottom:40px;
 	 margin-right: 30rem;}
 /*reponsive PC*/
@@ -648,68 +543,7 @@ opacity: 0;
 	#fonctionnement_cadre{
    
 	flex-direction:row;}
-	/*
-	.fonctionnement__titre, .restaurants__titre{
-		
-		margin-right:80rem;
-	}
-.fonctionnement_liste:before{
-		padding: 2px 2px 2px 2px;
 
-}
-	.fonctionnement__liste{
-		max-width: 2rem;
-		font-size:16px;
-		margin-right: 0rem;
-		height: 1rem;
-		 
-	}
-	.fonctionnement__liste{
-   
-	
-  
-	height: 50px;
-	}*/
-	
-/*Fonctionnement*/ 
-/*.fonctionnement{
-    padding: 15px 16px 30px 16px;
-}
-
-#fonctBloc{
-    display:flex;
-    flex-direction:row;
-    margin-left: 30px;}
-
-.fonctBoxs{
-    padding:5px 20px 5px 20px;
-    margin:10px 25px 10px 9px; 
-    background-color:#f8f6f4;
-    border-radius: 20px;
-    box-shadow:2px 2px 7px #e0e0e0;
-    position:relative;} 
-
-.fonctBoxs a{
-    text-decoration: none;}
-
- .numbers{
-     position:absolute; 
-     left:-5px;
-     text-decoration: none;
-     color:white; 
-     background-color:#9356DC;
-     border-radius:100%;
-     padding: 2px 7px 2px 7px;
-     font-size:0.9em;}   
-
- .fonctLogo i{
-     color:grey;
-     padding-top:5px; 
-     margin:0px 20px 0px 20px;}   
-
- .fonctBoxs p{
-     color:black;}
-*/
 	.box ol{display: flex;
 	flex-direction: row;}
 	.wrapper {
